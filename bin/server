@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# expects dynamodb local directory to be in BASEDIR
+BASEDIR=~/source/dynamodb/
+echo $BASEDIR
+java -Djava.library.path=${BASEDIR}DynamoDBLocal_lib -jar ${BASEDIR}DynamoDBLocal.jar
